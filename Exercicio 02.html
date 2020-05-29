@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+
+<script>
+    let livros = [
+        {
+            titulo: "Pequeno Principe",
+            autor: "Antoine de Saint-Exupéryn",
+            lido: true,
+        },
+        {
+            titulo: "Sutil Arte de Ligar o Foda-se",
+            autor: "Mark Manson",
+            lido: true,
+        },
+        {
+            titulo: "Seja foda!",
+            autor: "Caio Carneiro",
+            lido: false,
+        },
+        {
+            titulo: "Maxwell",
+            autor: "Alan Moore",
+            lido: false,
+        }        
+    ]  
+    livros.forEach(element => {
+        if(element.lido){
+            console.log(`Você já leu este livro – ${element.titulo} – ${element.autor}`)
+        }else{
+            console.log(`Você não leu este livro – ${element.titulo} – ${element.autor}`)
+        }   
+    }); 
+</script>
+</html>
